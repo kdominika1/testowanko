@@ -45,7 +45,7 @@ public class TescikTest {
     }
 
     /**
-     * tTest of main method, of class Tescik.
+     * Test of main method, of class Tescik.
      */
     @Test
     public void testMain() {
