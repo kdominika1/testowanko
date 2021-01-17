@@ -45,7 +45,7 @@ public class TescikTest {
     }
 
     /**
-     * Test of main method, of class Tescik.
+     * tTest of main method, of class Tescik.
      */
     @Test
     public void testMain() {
@@ -54,6 +54,12 @@ public class TescikTest {
       Tescik.main(args);
         // TODO review the generated test code and remove the default call to fail.
         fail("Wygenerowano perfidny błąd!");
+    }
+      @Test
+    public void testVersion8() {
+	final boolean JAVA_7_OR_EARLIER = System.getProperty("java.specification.version").compareTo("1.8") < 0;
+	System.out.println(System.getProperty("java.specification.version"));
+	assertTrue(JAVA_7_OR_EARLIER);
     }
     
 }
